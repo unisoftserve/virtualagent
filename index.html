@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Virtual Agent Demo</title>
+  <meta name="description" content="Lightweight demo site to showcase an AI customer support assistant.">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <span class="dot" aria-hidden="true"></span>
+      <span class="name">Virtual Agent</span>
+    </div>
+    <nav><a class="btn" href="#chat">Try the Demo</a></nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="copy">
+        <div class="badge">AI Support • MVP</div>
+        <h1>Instant answers for customers, with human escalation on demand.</h1>
+        <p class="lead">
+          This simple page hosts your AI assistant. We’ll embed a chat widget, point it to your FAQ, and
+          forward complex requests to a human—so clients can see value immediately.
+        </p>
+        <ul class="features">
+          <li>✅ Answers FAQs from a knowledge base</li>
+          <li>✅ Collects name/phone for complex cases</li>
+          <li>✅ Emails/notifications to humans for follow-up</li>
+        </ul>
+      </div>
+      <div class="visual">
+        <div class="card">
+          <h3>What you can test</h3>
+          <ol>
+            <li>Ask about hours, pricing, refunds</li>
+            <li>Try an edge case (e.g., “I lost my receipt”)</li>
+            <li>Watch the bot escalate & capture your details</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section id="chat" class="card">
+      <h2>Chat Demo</h2>
+      <p class="muted">The assistant will appear below once you paste your widget script.</p>
+
+      <!-- 🔧 BOT WIDGET PLACEHOLDER
+           Paste your provider's embed <script> here.
+           Example: Botpress Webchat (replace IDs):
+           <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+           <script>
+             window.botpressWebChat.init({
+               "botId": "YOUR_BOT_ID",
+               "clientId": "YOUR_CLIENT_ID",
+               "composerPlaceholder": "Type your question...",
+               "stylesheet": "https://cdn.botpress.cloud/webchat/v1/themes/dark.css"
+             });
+           </script>
+      -->
+
+      <div class="placeholder">
+        <div>Chat widget coming here → paste your embed code in <code>index.html</code>.</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    © <span id="y"></span> Virtual Agent • Demo only
+  </footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
