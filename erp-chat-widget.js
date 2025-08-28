@@ -55,7 +55,7 @@
       add("assistant", data.reply || "Sorry, I couldn't get a response.");
       messages.push({role:"assistant",content:data.reply || ""});
     }catch{ add("assistant","Network error. Please try again."); }
-    finally{ input.disabled=false; sendBtn.disabled=false; input.focus(); }
+    finally{ input.disabled=false;sendBtn.disabled=false;input.focus(); }
   }
   sendBtn.addEventListener("click",send);
   input.addEventListener("keydown",e=>{ if(e.key==="Enter") send(); });
