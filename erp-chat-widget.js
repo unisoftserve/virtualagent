@@ -1,7 +1,7 @@
 (function(){
   const script=document.currentScript;
   const ENDPOINT=(script.getAttribute("data-endpoint")||"").replace(/\/+$/,"")+"/chat";
-  const TITLE=script.getAttribute("data-title")||"Assistant";
+  const TITLE=script.getAttribute("data-title")||"Virtual Assistant";
   const WELCOME=script.getAttribute("data-welcome")||"Hi! Ask me anything about our service.";
   if(!ENDPOINT||ENDPOINT==="/chat"){console.error("chat-widget: data-endpoint required");return;}
 
